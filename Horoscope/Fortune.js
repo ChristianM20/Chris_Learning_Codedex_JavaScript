@@ -1,7 +1,4 @@
-// User defines their birth month
-let birthMonth = "March"; // Change this to your birth month
-
-// Fortune logic using control flow
+let birthMonth = "March";
 let fortunes;
 
 if (birthMonth === "January" || birthMonth === "February" || birthMonth === "March") {
@@ -33,7 +30,6 @@ if (birthMonth === "January" || birthMonth === "February" || birthMonth === "Mar
     fortunes = null;
 }
 
-// Randomly select and print a fortune
 if (fortunes) {
     let randomIndex = Math.floor(Math.random() * fortunes.length);
     console.log(`Your fortune: ${fortunes[randomIndex]}`);
